@@ -1,0 +1,1 @@
+Didn't create any new programs today but I did use python to parse a text file and pull checksums for a list of files. It turned out I didn't need to do it, but I did it!
