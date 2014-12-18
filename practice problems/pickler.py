@@ -1,5 +1,5 @@
 #! /usr/bin/python
-
+import urllib.request, pickle
 pickled = urllib.request.urlopen('http://www.pythonchallenge.com/pc/def/banner.p')
 test = pickle.loads(pickled.read())
 for i in test:
