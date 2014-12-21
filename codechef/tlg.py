@@ -1,5 +1,6 @@
 #! /usr/bin/python
 
+# apparently this did not pass codechef muster. Wrong answer somewhere.
 n = int(input())
 scores = []
 lead = []
