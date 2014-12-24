@@ -1,0 +1,2 @@
+
+2014-12-23: Taking a brief break from coding practice to switch to tmux. Screen had some wierd slowdown issues with vim. Not totally convinced screen was to blame, but it's a theory. While I'm at it I'm going to set up a new repository for my config files. Tired of trying to reconfigure things at home/work.
