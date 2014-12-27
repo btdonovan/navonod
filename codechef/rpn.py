@@ -42,7 +42,6 @@ def rpn(expression):
             operators.append(i)
     return answer
 
-import sys
 t = int(input())
 for i in range(t):
     expr = input()
