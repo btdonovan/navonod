@@ -1,6 +1,6 @@
-#! /usr/bin/python
-
-'''The palindrome is a string that can be read the same way from left to right and from right to left. For example, strings "aaaaa", "1221", "bbaabb" are palindromes, however the string "chef" is not a palindrome because if we read it from right to left, we will obtain "fehc" that is not the same as "chef".
+#! /usr/bin/env python3
+"""
+The palindrome is a string that can be read the same way from left to right and from right to left. For example, strings "aaaaa", "1221", "bbaabb" are palindromes, however the string "chef" is not a palindrome because if we read it from right to left, we will obtain "fehc" that is not the same as "chef".
 
 We call a string a "double string" if it has an even length and the first half of this string is equal to the second half of this string, for example "abab" is a double string because the first half "ab" is equal to the second half "ab", however the string "abba" is not a double string because the first half "ab" is not equal to the second half "ba". The empty string "" is a double string, and its length is 0.
 
@@ -29,7 +29,8 @@ Input:
 
 Output:
 2
-4'''
+4
+"""
 
 n = int(input())
 for i in range(n):

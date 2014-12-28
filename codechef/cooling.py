@@ -1,5 +1,5 @@
-#! /usr/bin/python
-'''
+#! /usr/bin/env python3
+"""
 The chef has just finished baking several pies, and it's time to place them on cooling racks.
 The chef has exactly as many cooling racks as pies. Each cooling rack can only hold one pie, and each pie may only be held by one cooling rack,
 but the chef isn't confident that the cooling racks can support the weight of the pies.
@@ -35,8 +35,7 @@ Sample output:
 4
 
 This one was fairly easy to understand. If your heaviest pie is heavier than your highest capacity rack, throw away the pie. I'm happy with my solution. Sort the pies and the racks from lightest to heaviest. Iterate from 1 to len(trays) + 1. Easy peasy.
-'''
-
+"""
 t = int(input())
 
 for i in range(t):

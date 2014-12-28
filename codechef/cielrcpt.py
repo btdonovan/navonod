@@ -1,6 +1,5 @@
 #! /usr/bin/env python3
-
-'''
+"""
 Tomya is a girl. She loves Chef Ciel very much.
 
 Tomya like a positive integer p, and now she wants to get a receipt of Ciel's restaurant whose total price is exactly p.
@@ -66,7 +65,7 @@ In the last sample, the optimal way is 2048+2048=4096 (2 menus).
 Note that there is no menu whose price is 4096. 
 
 Self note: I owned this one. I have the fastest submission on record!
-'''
+"""
 menu = [1<<i for i in range(11, -1, -1)] 
 t = int(input())
 for i in range(t):

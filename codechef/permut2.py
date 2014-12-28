@@ -1,5 +1,5 @@
-#! /usr/bin/python
-'''
+#! /usr/bin/env python3
+"""
 Some programming contest problems are really tricky: not only do they
 require a different output format from what you might have expected, but
 also the sample output does not show the difference. For an example,
@@ -52,7 +52,7 @@ Sample Output
 ambiguous
 not ambiguous
 ambiguous
-'''
+"""
 # Understanding the concept of inverse permutations was the tricky part.
 # for permutation [3, 6, 2, 1, 4, 5], 1 is in the fourth position, so the first position of the inverse permutation will be 4. 2 is in the third position so the 2nd position of the inverse permutation will be 3.
 # The input specification said that the last line of input would be a zero and that the test cases would be 1 <= n <= 100000 so I set the program in a while loop that would break if n == 0. This also allows n to be set within the loop. 

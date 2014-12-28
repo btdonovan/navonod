@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
-'''
- An integer is said to be a palindrome if it is equal to its
+"""
+An integer is said to be a palindrome if it is equal to its
 reverse. For example, 79197 and 324423 are palindromes. In this task
 you will be given an integer N, 1 ≤ N ≤ 1000000. You must find
 the smallest integer M ≥ N such that M is a prime number and M is a
@@ -20,7 +20,7 @@ Input:
 31
 Output:
 101
-'''
+"""
 def isprime(n):
     """DEPRICATED. Use is_prime() instead.
     Return True if n is a prime number. Otherwise, return False."""

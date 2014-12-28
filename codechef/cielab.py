@@ -1,5 +1,5 @@
 #! /usr/bin/env python3
-'''
+"""
 In Ciel's restaurant, a waiter is training.
 Since the waiter isn't good at arithmetic, sometimes he gives guests wrong change.
 Ciel gives him a simple problem.
@@ -36,7 +36,7 @@ So, for instance, 2624, 4324, 4623, 4604 and 4629 will be accepted, but 0624, 62
 Notes
 
 The problem setter is also not good at arithmetic.
-'''
+"""
 t = [int(i) for i in input().split()]
 
 if (t[0] - t[1]) % 10 == 9:
