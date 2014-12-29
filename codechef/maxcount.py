@@ -25,5 +25,17 @@ Description:
 In first case 2 occurs twice whereas all other elements occur only once. 
 In second case, both 1 and 2 occur 3 times but 1 is smaller than 2.
 """
-
-
+import sys
+T = int(sys.stdin.buffer.readline())
+while T > 0:
+    N = int(sys.stdin.buffer.readline())
+    nums = list(map(int,sys.stdin.buffer.readline().split()))
+    nums.sort(reverse=True)
+    V = 0
+    C = 0
+    for i in nums:
+        if nums.count(i) >= C:
+            C = nums.count(i)
+            V = i
+    print(V, C)
+    T -= 1
