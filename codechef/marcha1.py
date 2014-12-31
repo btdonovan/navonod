@@ -38,7 +38,7 @@ Input:
 5
 10
 10
-20 132
+20 132 
 17
 6
 4
@@ -77,6 +77,7 @@ For now, I'm leaving this alone. The code below works, it's just not fast enough
 The sample input above has been saved to marcha1.txt and can be fed to python from bash with the following command:
     cat marcha1.txt | python3 marcha1.py
 """
+'''
 import sys
 t = int(sys.stdin.buffer.readline())
 for h in range(t):
@@ -93,4 +94,63 @@ for h in range(t):
             print('Yes')
             break
     if sum != m:
+        print('No')
+
+hndrd = open('marchinput.txt', 'r')
+t = int(hndrd.readline())
+for h in range(t):
+    n, m = map(int,hndrd.readline().split())
+    bills = [] 
+    found = False
+    k = n
+    for z in range(k):
+        line = int(hndrd.readline())
+        if line == m:
+            found = True
+            break
+        if line < m:
+            bills.append(line)
+        if line > m:
+            n -= 1
+    for i in range(1, 2**n):
+        sum = 0
+        for j in range(n):
+            if i & 1<<j:
+                sum += bills[j]
+        if sum == m:
+            found = True
+            break
+    if found:
+        print('Yes')
+    else:
+        print('No')
+'''
+
+import sys
+t = int(input())
+for h in range(t):
+    n, m = map(int,input().split())
+    bills = [] 
+    found = False
+    k = n
+    for z in range(k):
+        line = int(input())
+        if line < m:
+            bills.append(line)
+        if line > m:
+            n -= 1
+        if line == m:
+            found = True
+    if not found:
+        for i in range(1, 2 ** n):
+            sum = 0
+            for j in range(n):
+                if i & 1<<j:
+                    sum += bills[j]
+            if sum == m:
+                found = True
+                break
+    if found:
+        print('Yes')
+    else:
         print('No')
