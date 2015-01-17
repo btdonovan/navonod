@@ -10,7 +10,7 @@ for i in range(len(source)):
 from random import sample
 
 def setpass():
-    newpass = sample(source, 4)
-    print(newpass[0], newpass[1], newpass[2], newpass[3])
+    newpass = " ".join(sample(source, 4))
+    print(newpass)
 
 setpass()
