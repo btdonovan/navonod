@@ -77,7 +77,7 @@ For now, I'm leaving this alone. The code below works, it's just not fast enough
 The sample input above has been saved to marcha1.txt and can be fed to python from bash with the following command:
     cat marcha1.txt | python3 marcha1.py
 """
-'''
+#'''
 import sys
 t = int(sys.stdin.buffer.readline())
 for h in range(t):
