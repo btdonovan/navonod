@@ -11,6 +11,6 @@ from random import sample
 
 def setpass():
     newpass = " ".join(sample(source, 4))
-    print(newpass)
+    return newpass
 
 setpass()
